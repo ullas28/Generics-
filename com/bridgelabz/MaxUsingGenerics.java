@@ -10,19 +10,23 @@ package com.bridgelabz;
 
 public class MaxUsingGenerics {
     //compareTo method for Checking Maximum values from 3 Integer Object
-    public static Integer max(Integer a,Integer b,Integer c) {
-        int max = a;
+    public static <T extends Comparable<T>> T max(T a, T b, T c) {
+        T max = a;
         if (b.compareTo(max) > 0) {
             max = b;
         } else if (c.compareTo(max)>0) {
             max = c;
         }
+        printMax(a,b,c,max);
         return max;
     }
 
+    public static <T> void printMax(T a, T b, T c, T max){
+        System.out.printf("Max of %s %s and %s is %s\n",a,b,c,max);
+    }
 
     public static void main(String[] args) {
-
-        System.out.println("Maximum from 3 Integer Object : "+max(190,120,20));
+        Integer a = 190,b = 120, c= 300;
+        max(a,b,c);
     }
 }

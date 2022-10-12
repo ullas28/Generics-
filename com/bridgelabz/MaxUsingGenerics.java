@@ -14,7 +14,8 @@ public class MaxUsingGenerics {
         T max = a;
         if (b.compareTo(max) > 0) {
             max = b;
-        } else if (c.compareTo(max)>0) {
+        }
+        if (c.compareTo(max)>0) {
             max = c;
         }
         printMax(a,b,c,max);
@@ -26,7 +27,7 @@ public class MaxUsingGenerics {
     }
 
     public static void main(String[] args) {
-        Integer a = 190,b = 120, c= 300;
+        Integer a = 190,b = 220, c= 300;
         max(a,b,c);
     }
 }

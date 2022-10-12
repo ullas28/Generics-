@@ -18,23 +18,25 @@ public class MaxUsingGenerics {
         if (d.compareTo(max)>0){
             max = d;
         }
-        printMax(a,b,c,d,max);
+
         return max;
     }
 
-    public static <T> void printMax(T a, T b, T c, T d, T max){
-        System.out.printf("Max of %s %s %s and %s is %s\n",a,b,c,d,max);
-    }
+
 
     public static void main(String[] args) {
         Integer a1 = 190,a2 = 220, a3 = 300, a4 = 230;
         Float b1 = 12.20f,b2 = 19.20f, b3= 31.2f, b4 = 56.4F;
         String c1 = "Apple", c2 = "Peach", c3 = "Banana", c4 = "PineApple";
-        System.out.println("For Integer values");
-        max(a1,a2,a3,a4);
-        System.out.println("For Flaot values");
-        max(b1,b2,b3,b4);
-        System.out.println("For String values");
-        max(c1,c2,c3,c4);
+        System.out.println("Maximum values");
+        System.out.printf("For Integer values : %s %s %s %s",a1,a2,a3,a4);
+        System.out.println(" ");
+        System.out.println(max(a1,a2,a3,a4));
+        System.out.printf("For Flaot values : %s %s %s %s",b1,b2,b3,b4);
+        System.out.println(" ");
+        System.out.println(max(b1,b2,b3,b4));
+        System.out.printf("For String values : %s %s %s %s",c1,c2,c3,c4);
+        System.out.println(" ");
+        System.out.println(max(c1,c2,c3,c4));
     }
 }

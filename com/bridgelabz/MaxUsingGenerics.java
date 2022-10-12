@@ -28,6 +28,10 @@ public class MaxUsingGenerics {
 
     public static void main(String[] args) {
         Integer a = 190,b = 220, c= 300;
+        Float d = 12.20f,e = 19.20f, f= 31.2f;
+        System.out.println("For Integer values");
         max(a,b,c);
+        System.out.println("For Flaot values");
+        max(d,e,f);
     }
 }

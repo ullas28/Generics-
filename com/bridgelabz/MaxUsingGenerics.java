@@ -1,10 +1,6 @@
 /*Given 3 Integers find the maximum
-- Ensure to test code with the Test Case.
-- To ensure your Code works you need 3
-test cases with Max Number at 1st, 2nd
-and 3rd
-- Use Integer Object and compareTo
-UC 1 method to test the maximum number*/
+ 3 float find the maximum
+ 3 strings find the greatestor max*/
 
 package com.bridgelabz;
 
@@ -29,9 +25,12 @@ public class MaxUsingGenerics {
     public static void main(String[] args) {
         Integer a = 190,b = 220, c= 300;
         Float d = 12.20f,e = 19.20f, f= 31.2f;
+        String g = "Apple", h = "Peach", i = "Banana";
         System.out.println("For Integer values");
         max(a,b,c);
         System.out.println("For Flaot values");
         max(d,e,f);
+        System.out.println("For String values");
+        max(g,h,i);
     }
 }
